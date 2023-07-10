@@ -1,7 +1,10 @@
 import tkinter as tk
 from tkinter import filedialog
 import os
-from .compressorDecompressor import HuffmanCode
+import sys
+current_dir=os.path.dirname(os.path.abspath(__file__))
+sys.path.append(current_dir)
+from compressorDecompressor import HuffmanCode
 # Function to process the uploaded file
 # this for compression
 def process_file(file_path):
